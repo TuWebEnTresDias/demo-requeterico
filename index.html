@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Requeterico - Pastelería y cafetería artesanal en Tandil. tortas, alfajores, café y platos caseros en un ambiente cálido y acogedor. Av. Monseñor D Andrea 315.">
+    <title>Requeterico | Pastelería Artesanal en Tandil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="#hero" class="header__logo">
+                <span class="header__logo-text">Requeterico</span>
+                <span class="header__logo-subtitle">pastelería y cafetería</span>
+            </a>
+            
+            <nav class="header__nav" id="mainNav">
+                <a href="#nosotros" class="header__nav-link">Nosotros</a>
+                <a href="#menu" class="header__nav-link">Menú</a>
+                <a href="#galeria" class="header__nav-link">Galería</a>
+                <a href="#momentos" class="header__nav-link">Momentos</a>
+                <a href="#contacto" class="header__nav-link header__nav-link--cta">Reservá tu mesa</a>
+            </nav>
+
+            <button class="header__mobile-toggle" id="mobileToggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnTxYxhX2C6L6o-0YywFH3j44YDr-I0hbJGEuv9FwCLh6MbXosxEAA9pvRExxh_oEujF2AXgEorBBGaAaZusqlst_NIh0pgM9eC45v2ZYcsAsuu27iS-rCOZctO0WwhwIwPhRzk4WfRrNgk=s1360-w1360-h1020" alt="Entrada de Requeterico" class="hero__bg-img" loading="eager">
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <h1 class="hero__title">Dulzura que se siente<br><span class="hero__title-accent">requeterica</span></h1>
+            <p class="hero__subtitle">Pastelería artesanal, café de especialidad y platos caseros en el corazón de Tandil. Un lugar para quedarse, no solo pasar.</p>
+            <div class="hero__cta-group">
+                <a href="#menu" class="btn btn--primary">Descubrí nuestro menú</a>
+                <a href="https://wa.me/5492494242499?text=Hola! Quisiera hacer una reserva en Requeterico" class="btn btn--secondary" target="_blank" rel="noopener">Reservá por WhatsApp</a>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <span>Deslizá</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4L12 20M12 20L6 14M12 20L18 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Nosotros / Diferenciales -->
+    <section class="section section--cream" id="nosotros">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-header__label">Nuestra esencia</span>
+                <h2 class="section-header__title">Lo que nos hace <em>distintos</em></h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-animate="fade-up">
+                    <div class="feature-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4z" stroke="#5D3A1A" stroke-width="2"/>
+                            <path d="M18 20c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="#7BA37A" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="28" r="4" fill="#5D3A1A"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Hecho con amor</h3>
+                    <p class="feature-card__text">Cada torta, cada alfajor, cada cookie se prepara artesanalmente con ingredientes selectos y recetas que heredamos y perfeccionamos.</p>
+                </div>
+
+                <div class="feature-card" data-animate="fade-up" data-delay="100">
+                    <div class="feature-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 40V20c0-2.2 1.8-4 4-4h24c2.2 0 4 1.8 4 4v20" stroke="#5D3A1A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 40h40" stroke="#5D3A1A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M24 16v-4c0-2.2-1.8-4-4-4h-4c-2.2 0-4 1.8-4 4v4" stroke="#7BA37A" stroke-width="2"/>
+                            <circle cx="24" cy="28" r="6" stroke="#5D3A1A" stroke-width="2"/>
+                            <path d="M21 28l2 2 4-4" stroke="#5D3A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Ambiente que abraza</h3>
+                    <p class="feature-card__text">Madera, piedra, chimenea y luz cálida. Un espacio pensado para disfrutar el momento, sentarte con amigos o desconectar un rato.</p>
+                </div>
+
+                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 36c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4" stroke="#5D3A1A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M14 36V12c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v24" stroke="#5D3A1A" stroke-width="2"/>
+                            <path d="M20 20h8M20 26h8M20 32h4" stroke="#7BA37A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 12h6M8 18h6M8 24h6" stroke="#5D3A1A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Variedad que enamora</h3>
+                    <p class="feature-card__text">Desde el desayuno hasta la cena, pasando por tartas, pastas y milanesas. Siempre algo nuevo para descubrir en nuestra carta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producto Estrella -->
+    <section class="section section--dark" id="estrella">
+        <div class="container">
+            <div class="star-product">
+                <div class="star-product__image" data-animate="fade-right">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmT2-vjc4FRlYo4J34AJaUrA-xZK5uhOqtH9i7fhgLtSIKYAjqtWGrKiUniaF2qxHph7f2wYVO5_SIpsXn7H-OdBqwxRw5849GWx2QSPCKihwHGvgccA-tx4qFpy40EYMjwxntZEFgU-FHk=s1360-w1360-h1020" alt="Nuestra vitrina de tortas artesanales" loading="lazy">
+                </div>
+                <div class="star-product__content" data-animate="fade-left">
+                    <span class="star-product__label">Especialidad de la casa</span>
+                    <h2 class="star-product__title">Nuestras Tortas</h2>
+                    <p class="star-product__text">Cada torta es una obra de arte comestible. Desde la clásica Chocotorta hasta nuestra Tira Miso con café, pasando por el Cheesecake de Maracuyá y el Brunet con mousse de chocolate. Elegí tu favorita o animate a probar algo nuevo.</p>
+                    <div class="star-product__price">
+                        <span class="star-product__price-label">Desde</span>
+                        <span class="star-product__price-value">$12.500</span>
+                        <span class="star-product__price-unit">la porción</span>
+                    </div>
+                    <a href="https://wa.me/5492494242499?text=Hola! Quiero consultar por tortas para llevar" class="btn btn--primary" target="_blank" rel="noopener">Pedí la tuya por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú -->
+    <section class="section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-header__label">Nuestra carta</span>
+                <h2 class="section-header__title">Elegí lo que <em>más te pinte</em></h2>
+            </div>
+
+            <div class="menu-tabs" data-animate="fade-up">
+                <button class="menu-tab menu-tab--active" data-tab="pasteleria">Pastelería</button>
+                <button class="menu-tab" data-tab="tortas">Tartas y Tortas</button>
+                <button class="menu-tab" data-tab="platos">Platos Principales</button>
+                <button class="menu-tab" data-tab="ensaladas">Ensaladas</button>
+                <button class="menu-tab" data-tab="bebidas">Bebidas</button>
+            </div>
+
+            <!-- Pastelería -->
+            <div class="menu-category menu-category--active" id="pasteleria">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Alfajor Brownie</h3>
+                            <span class="menu-item__price">$9.500</span>
+                        </div>
+                        <p class="menu-item__desc">Masa brownie con nuez, dulce de leche y chocolate negro.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Brownie Con Nuez</h3>
+                            <span class="menu-item__price">$7.500</span>
+                        </div>
+                        <p class="menu-item__desc">Chocolate negro intenso con nueces crocantes.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Cuadrado De Coco Y Brownie</h3>
+                            <span class="menu-item__price">$7.200</span>
+                        </div>
+                        <p class="menu-item__desc">Brownie, leche condensada y coco rallado.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Alfajor Masa Sablee</h3>
+                            <span class="menu-item__price">$6.000</span>
+                        </div>
+                        <p class="menu-item__desc">Alfajor de masa sablee, dulce de leche y azúcar impalpable.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Carrot Cookies</h3>
+                            <span class="menu-item__price">$5.000</span>
+                        </div>
+                        <p class="menu-item__desc">Por 3 unidades. Zanahoria y nueces.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Alfajor Oreo</h3>
+                            <span class="menu-item__price">$9.500</span>
+                        </div>
+                        <p class="menu-item__desc">Alfajor de Oreo con cobertura de chocolate negro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tartas y Tortas -->
+            <div class="menu-category" id="tortas">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Cheesecake Con Frutos Rojos</h3>
+                            <span class="menu-item__price">$12.500</span>
+                        </div>
+                        <p class="menu-item__desc">Cheesecake de limón con frutos rojos frescos.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Torta Bariloche</h3>
+                            <span class="menu-item__price">$13.500</span>
+                        </div>
+                        <p class="menu-item__desc">Clásica torta de marroc, irresistible.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Chocotorta</h3>
+                            <span class="menu-item__price">$12.500</span>
+                        </div>
+                        <p class="menu-item__desc">Base de galletitas chocolinas, crema de dulce de leche y galletitas chocolinas.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Brunet</h3>
+                            <span class="menu-item__price">$12.500</span>
+                        </div>
+                        <p class="menu-item__desc">Brownie, dulce de leche, mousse de chocolate semi amargo y ganache de chocolate negro.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Tiramisú</h3>
+                            <span class="menu-item__price">$12.000</span>
+                        </div>
+                        <p class="menu-item__desc">Vainillas, café y mascarpone. El clásico italiano.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Selva Negra</h3>
+                            <span class="menu-item__price">$13.500</span>
+                        </div>
+                        <p class="menu-item__desc">Bizcochuelo de chocolate, crema y cerezas al marrasquino.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platos Principales -->
+            <div class="menu-category" id="platos">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Hamburguesa Requeterica</h3>
+                            <span class="menu-item__price">$17.500</span>
+                        </div>
+                        <p class="menu-item__desc">Queso, panceta, cebolla caramelizada, tomate, lechuga y guarnición de papas fritas.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Milanesa De Ternera Requeterica</h3>
+                            <span class="menu-item__price">$16.800</span>
+                        </div>
+                        <p class="menu-item__desc">Milanesa de carne rebozada con mix de semillas, muzzarella, champignon, cherrys confitados y papas rústicas.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Lomito Completo</h3>
+                            <span class="menu-item__price">$26.000</span>
+                        </div>
+                        <p class="menu-item__desc">Jamón, queso, tomate, lechuga y guarnición de papas fritas.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Ravioles De Calabaza</h3>
+                            <span class="menu-item__price">$18.500</span>
+                        </div>
+                        <p class="menu-item__desc">Salsa fileto, crema o requeterica (crema, jamón y hongos). Aclarar salsa.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Pizza Especial</h3>
+                            <span class="menu-item__price">$13.200</span>
+                        </div>
+                        <p class="menu-item__desc">Pizza de 6 porciones. Jamón, muzzarella y morrones.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Ensalada Requeterica</h3>
+                            <span class="menu-item__price">$23.500</span>
+                        </div>
+                        <p class="menu-item__desc">Tomates confitados, rúcula, pollo y hongos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ensaladas -->
+            <div class="menu-category" id="ensaladas">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Ensalada Chicken</h3>
+                            <span class="menu-item__price">$23.000</span>
+                        </div>
+                        <p class="menu-item__desc">Mix de pollo, croutons, parmesano y aderezo.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Ensalada De Mar</h3>
+                            <span class="menu-item__price">$12.600</span>
+                        </div>
+                        <p class="menu-item__desc">Langostinos, lechuga, croutons, queso crema.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Ensalada Veggie</h3>
+                            <span class="menu-item__price">$23.000</span>
+                        </div>
+                        <p class="menu-item__desc">Mix de verdes, calabaza asada, berenjenas, zucchini y queso brie.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Ensalada De Tres Ingredientes</h3>
+                            <span class="menu-item__price">$11.000</span>
+                        </div>
+                        <p class="menu-item__desc">Elegí 3: lechuga, zanahoria, huevo, rúcula, cherrys, tomate, hongos, remolacha, choclo. Aclarar en comentarios.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div class="menu-category" id="bebidas">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Café Especial</h3>
+                            <span class="menu-item__price">$2.800</span>
+                        </div>
+                        <p class="menu-item__desc">Blend de autor, espresso doble. El alma de nuestra casa.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Café Frío</h3>
+                            <span class="menu-item__price">$3.500</span>
+                        </div>
+                        <p class="menu-item__desc">Cold brew con hielo y toque de vainilla. Refrescante.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Limonada Casera</h3>
+                            <span class="menu-item__price">$3.200</span>
+                        </div>
+                        <p class="menu-item__desc">Limones frescos, menta y un toque de jengibre.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Batido de Fruta</h3>
+                            <span class="menu-item__price">$4.500</span>
+                        </div>
+                        <p class="menu-item__desc">Banana, frutilla, frambuesa o mixto con helado de crema.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Cerveza Patagonia</h3>
+                            <span class="menu-item__price">$5.400</span>
+                        </div>
+                        <p class="menu-item__desc">Amber Lager, Weisse, IPA o Bohemian. Botella 730ml.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__name">Jugo Natural</h3>
+                            <span class="menu-item__price">$3.000</span>
+                        </div>
+                        <p class="menu-item__desc">Naranja, manzana o multifruta. Recién exprimido.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-footer" data-animate="fade-up">
+                <p>¿No encontrás lo que buscabas? Consultanos por el menú completo o pedidos especiales.</p>
+                <a href="https://wa.me/5492494242499?text=Hola! Quiero ver el menú completo de Requeterico" class="btn btn--primary" target="_blank" rel="noopener">Consultá por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="section section--dark" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-header__label">Nuestro espacio</span>
+                <h2 class="section-header__title">Un lugar que <em>se siente</em></h2>
+            </div>
+            
+            <div class="gallery-grid" data-animate="fade-up">
+                <div class="gallery-item gallery-item--large">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlNxUATBjPSYikJbnwcbsSuVVp5rMVIudwiAXlu2eX2-Jk_Nqft3kfFHOmv3owdnDqjBUez-usmP_QiMwfrNdo-8JMZCJ81WDIEh4l-jKcuru_L9CIofZMnWWpedCAaFdIUkpBqpA=s1360-w1360-h1020" alt="Sillones acogedores" loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <span>Sillones para quedarse</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWntUXPnzupp79iCJkiDQucHnMgFWDKFQunB6q6BNgleUlDSLBShCpsIMEb3x61_uobJMN-asPS7HsuY4SF5FQZCFU4hcra9_zrA3FoQC9V-8FsIICL9P_WkQseQrgU9VUWDW71-ACa_di7K=s1360-w1360-h1020" alt="Chimenea encendida" loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <span>Calidez de hogar</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkNqrtBZSlJ0ZgJDAhqwSWXSFSBBwO5mzP_uQzrukZKuw60-5bWH5VM0dpUZgR65qvkC8l3IAT2lD_XV_f5iIfRbBe7OCqQro5W7UKYFyeQa_IdBOR1jYlLFCYx1-_Qj2Kr4_wR=s1360-w1360-h1020" alt="Batido artesanal" loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <span>Bebidas con alma</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmXY3DILk_pS-ew9G56U7R8MzK1EJGH6rH_fx3JQJf8lW5hWkRGJiwmG82z7QsTN4LqEvWsPMTG7F8LW9-U40SrrAJuUyYjRMrHgx2XzmBlyre0eqsZBsUBDfg49VbY2dwqc_dMKmzFLij5=s1360-w1360-h1020" alt="Merienda en Requeterico" loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <span>Momentos compartidos</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item--large">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlNIXqdTIS_PbsgCWAZ9_VvH9aEoJZwjQdI5W8RqlZ8NyWSS7wLpYe739Gji0Z_LcBeW6pDh2lI9noxiqd36WC_62brGTdr-9KjAQc0bw_79vCLsp3YlWEwMPCpnjPfZ11bhLn_=s1360-w1360-h1020" alt="Mostrador de pastelería" loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <span>Dulces tentaciones</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlK-OjOvrROCtbZ1e71896gxswFgqgocos7UeghVFr90w72nWCR5lQCSvyRTvXp25m_FrZpzHG1Ot6JPTTUKZfHfric2mYPE7uu91XuiCsr-RAE6P0HRMG8qL1IZVq5jC2n6cwWpBdmUtZg=s1360-w1360-h1020" alt="Batido con torta" loading="lazy">
+                    <div class="gallery-item__overlay">
+                        <span>El combo perfecto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section section--cream" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-header__label">Lo que dicen</span>
+                <h2 class="section-header__title">Nuestros clientes <em>cuentan</em></h2>
+                <div class="rating-summary">
+                    <span class="rating-summary__score">4.1</span>
+                    <div class="rating-summary__stars">
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <span class="rating-summary__text">basado en 1.568 reseñas de Google</span>
+                </div>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate="fade-up">
+                    <div class="testimonial-card__rating">
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-card__text">"Ufff, un viaje de ida... Muy lindo el lugar, la atención super amable y la comida, qué decirte, requeterica!!! Recomiendo las limonadas y los café fríos."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">C</div>
+                        <div>
+                            <span class="testimonial-card__name">Carolina M.</span>
+                            <span class="testimonial-card__date">hace 3 meses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate="fade-up" data-delay="100">
+                    <div class="testimonial-card__rating">
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l-6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-card__text">"Excelente atención de la mesera. Lugar muy bonito, tanto dentro del salón como afuera. Precios accesibles. Recomiendo."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">M</div>
+                        <div>
+                            <span class="testimonial-card__name">Martín L.</span>
+                            <span class="testimonial-card__date">hace 1 mes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate="fade-up" data-delay="200">
+                    <div class="testimonial-card__rating">
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l-6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l-6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#5D3A1A"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l-6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-card__text">"Desde la onda, hasta la rica comida con ese hermoso ambiente, mi familia y yo la pasamos increíble, recomendadísimo."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">P</div>
+                        <div>
+                            <span class="testimonial-card__name">Patricia R.</span>
+                            <span class="testimonial-card__date">hace 2 semanas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Momentos -->
+    <section class="section" id="momentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-header__label">Elegí tu momento</span>
+                <h2 class="section-header__title">Para cada <em>antojo</em></h2>
+            </div>
+            
+            <div class="moments-grid">
+                <div class="moment-card" data-animate="fade-up">
+                    <div class="moment-card__image">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkpWpfIT5k0EZU8P2b53Md3B3UTWEkkdB7xPhsR6WcEVscLTL_fJkOSa1vg9u5KiURDJesnWtEL33EHDvwl0fI_7B4E0GeRp5uHXqaz5pEQrUpeJ2I9ZcuYWpFjzRfdH3HSDd0=s1360-w1360-h1020" alt="Café de la mañana" loading="lazy">
+                    </div>
+                    <div class="moment-card__content">
+                        <h3 class="moment-card__title">El café de la mañana</h3>
+                        <p class="moment-card__time">8:00 - 11:00</p>
+                        <p class="moment-card__desc">Arrancá el día con un café de especialidad y medialunas recién salidas del horno. El sol de la mañana y el aroma a café fresco.</p>
+                    </div>
+                </div>
+
+                <div class="moment-card" data-animate="fade-up" data-delay="150">
+                    <div class="moment-card__image">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmXY3DILk_pS-ew9G56U7R8MzK1EJGH6rH_fx3JQJf8lW5hWkRGJiwmG82z7QsTN4LqEvWsPMTG7F8LW9-U40SrrAJuUyYjRMrHgx2XzmBlyre0eqsZBsUBDfg49VbY2dwqc_dMKmzFLij5=s1360-w1360-h1020" alt="Merienda con amigos" loading="lazy">
+                    </div>
+                    <div class="moment-card__content">
+                        <h3 class="moment-card__title">La merienda con amigos</h3>
+                        <p class="moment-card__time">16:00 - 18:00</p>
+                        <p class="moment-card__desc">Tortas, cookies, batidos y charla interminable. El momento perfecto para juntarse y probar algo dulce.</p>
+                    </div>
+                </div>
+
+                <div class="moment-card" data-animate="fade-up" data-delay="300">
+                    <div class="moment-card__image">
+                        <img src="https://lh3.googleusercontent.com/proxy/JaBHt-vbh3WlRQ_wAnu1dziCs8Ri0Cxv8Z4lSbDCe17t3AEJ0dlB0pI9Ava0E86H92OtTQW09rqgLlGbTCM6sKzDqpyBl2NcmTpVm81YPf7iKzx4h2sXHpeEEYBdZSG0jaNhqLcg2QS9sGYafdiQ8ejlyigg7ik=s1360-w1360-h1020" alt="Almuerzo especial" loading="lazy">
+                    </div>
+                    <div class="moment-card__content">
+                        <h3 class="moment-card__title">El almuerzo o la cena</h3>
+                        <p class="moment-card__time">12:00 - 21:00</p>
+                        <p class="moment-card__desc">Hamburguesas, milanesas, pastas, ensaladas. Platos caseros con ese toque especial que nos caracteriza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto / Reserva -->
+    <section class="section section--cream" id="contacto">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <span class="section-header__label">Visitános</span>
+                    <h2 class="section-header__title">Te esperamos en<br><em>Requeterico</em></h2>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="#5D3A1A" stroke-width="2"/>
+                                <circle cx="12" cy="9" r="2.5" stroke="#5D3A1A" stroke-width="2"/>
+                            </svg>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Av. Monseñor D Andrea 315<br>B7000 Tandil, Buenos Aires</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#5D3A1A" stroke-width="2"/>
+                                <path d="M12 6V12L16 14" stroke="#5D3A1A" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <div>
+                                <h4>Horarios</h4>
+                                <p>Lunes a Domingo<br>8:00 - 21:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#5D3A1A" stroke-width="2"/>
+                            </svg>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p><a href="tel:+5492494242499">+54 9 249 424-2499</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://www.facebook.com/pasteleriarequeterico/?locale=es_LA" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/requetericopasteleriaartesanal/?hl=es" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-animate="fade-left">
+                    <h3 class="contact-form-title">Hacé tu reserva</h3>
+                    <form id="reservationForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Tu teléfono">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Fecha</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Hora</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Personas</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Seleccioná</option>
+                                <option value="1-2">1-2 personas</option>
+                                <option value="3-4">3-4 personas</option>
+                                <option value="5-6">5-6 personas</option>
+                                <option value="7+">7 o más personas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje (opcional)</label>
+                            <textarea id="message" name="message" rows="3" placeholder="¿Algo que debamos saber?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Enviar por WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe
+                src="https://maps.google.com/maps?q=Av.+Monse%C3%B1or+D+Andrea+315+Tandil+Buenos+Aires&output=embed"
+                width="100%"
+                height="350"
+                style="border:0;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación de Requeterico en Tandil">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#hero" class="footer__logo">
+                        <span class="footer__logo-text">Requeterico</span>
+                        <span class="footer__logo-subtitle">pastelería y cafetería</span>
+                    </a>
+                    <p class="footer__tagline">Dulzura que se siente requeterica.</p>
+                </div>
+                
+                <div class="footer__links">
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#menu">Menú</a>
+                    <a href="#galeria">Galería</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+
+                <div class="footer__hours">
+                    <h4>Horarios</h4>
+                    <p>Lunes a Domingo<br>8:00 - 21:00</p>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2026 Requeterico - Pastelería Artesanal. Todos los derechos reservados.</p>
+                <a href="https://tuweben3dias.com" class="footer__credit" target="_blank" rel="noopener">Diseñado por tuweben3dias.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/5492494242499?text=Hola! Quiero hacer un pedido o consulta" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
