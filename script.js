@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const whatsappUrl = `https://wa.me/5492494242499?text=${encodedMessage}`;
             
             // Open WhatsApp
-            window.open(whatsappUrl, '_blank');
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
             
             // Optional: Show success feedback
             const submitBtn = this.querySelector('button[type="submit"]');
